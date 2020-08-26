@@ -3,7 +3,7 @@
 use app\db\Database;
 
 require_once __DIR__ .'/../db/Database.php';
-
+require_once __DIR__ .'/../db/config.php';
 function getBody()
     {
         foreach ($_POST as $key => $value) {
@@ -38,6 +38,7 @@ if(isset($_POST['signup-btn'])) {
 
     if (empty($errors)) {
         $input->register($data['firstname'], $data['lastname'], $data['email']);
+
 
     }
 }
