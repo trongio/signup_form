@@ -1,0 +1,119 @@
+* {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(16%, #090979), color-stop(49%, #00b6db), color-stop(76%, #00deb2), to(#009a7c));
+  background: linear-gradient(90deg, #020024 0%, #090979 16%, #00b6db 49%, #00deb2 76%, #009a7c 100%);
+  width: 100vw;
+  height: 100%;
+  background-color: #CCCCCC;
+}
+
+.container {
+  float: left;
+  background-color: rgba(255, 255, 255, 0.739);
+  padding: 20px 30px;
+  border: 1px solid #222222;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 59px -6px rgba(0, 0, 0, 0.66);
+          box-shadow: 0 0 59px -6px rgba(0, 0, 0, 0.66);
+}
+
+.container p .success {
+  font-weight: bold;
+  font-size: 24px;
+  color: #23a723;
+}
+
+.container p .error {
+  font-weight: bold;
+  font-size: 24px;
+  color: #a72323;
+}
+
+.container .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+.container .form-group label {
+  font-size: 24px;
+}
+
+.container .form-group input {
+  font-size: 22px;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  line-height: 20px;
+}
+
+.container .form-group:last-of-type {
+  margin: 0 0 20px 0;
+}
+
+.container button {
+  cursor: pointer;
+  background-color: azure;
+  border: 1px solid #2b88c7;
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.container button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 1224px) and (max-width: 1440px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1044px) and (max-width: 1224px) {
+  .container {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 844px) and (max-width: 1044px) {
+  .container {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,12 @@
+{
+  "name": "1/signup_form",
+  "require": {
+    "phpmailer/phpmailer": "^6.1"
+  },
+  "authors": [
+    {
+      "name": "trongio",
+      "email": "giokakabadze50@gmail.com"
+    }
+  ]
+}
