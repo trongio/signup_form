@@ -25,10 +25,10 @@ body {
   background: linear-gradient(90deg, #020024 0%, #090979 16%, #00b6db 49%, #00deb2 76%, #009a7c 100%);
   width: 100vw;
   height: 100%;
+  background-color: #CCCCCC;
 }
 
 .container {
-  width: 400px;
   float: left;
   background-color: rgba(255, 255, 255, 0.739);
   padding: 20px 30px;
@@ -91,5 +91,29 @@ body {
 .container button:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 1224px) and (max-width: 1440px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1044px) and (max-width: 1224px) {
+  .container {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 844px) and (max-width: 1044px) {
+  .container {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

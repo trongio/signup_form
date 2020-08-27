@@ -39,6 +39,12 @@ function getBody()
 
     if (empty($errors)) {
         $input->register($data['firstname'], $data['lastname'], $data['email']);
+
+        mail("test@developers-alliance.com","signup_kakabadze",
+            "Here are your credentials <br> email :" . $data["email"] . "<br>" .
+            "first name : " . $data['firstname'] ."<br>".
+            "last name : " . $data['lastname'] . "<br> Thank You!");
+
         echo "<p class='success'>";
         echo "success!";
         echo "</p>";
