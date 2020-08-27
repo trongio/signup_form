@@ -20,58 +20,65 @@ body{
 }
 
 .container {
+  
   width: 400px;
   float: left;
   background-color: rgba(255, 255, 255, 0.739);
-  padding: 20px 0;
+  padding: 20px 30px;
   border: 1px solid rgb(34, 34, 34);
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 0 59px -6px rgba(0,0,0,0.66);
 
-  form {
-    padding: 15px 40px;
+  p{
+    .success{
+      font-weight: bold;
+      font-size: 24px;
+      color:  rgb(35, 167, 35); 
+    }
+    .error{
+      font-weight: bold;
+      font-size: 24px;
+      color:  rgb(167, 35, 35); 
+    }
+  }
+    
 
-    .form-group{
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      margin: 0 0 10px 0;
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 0 10px 0;
 
-      label{
-        font-size: 24px;
-      }
-
-      .is-invalid{
-        border: 1px solid rgb(167, 35, 35);
-        background-color: #ffdddd;
-      }
-
-      input {
-        font-size: 22px;
-        padding: 5px 5px;
-        border: 1px solid black;
-        border-radius: 5px;
-        line-height: 20px;
-      }
-
-      &:last-of-type{
-          margin: 0 0 20px 0;
-      }
+    label{
+      font-size: 24px;
     }
 
-    button {
-      cursor: pointer;
-      background-color: azure;
-      border: 1px solid rgb(43, 136, 199);
-      padding: 5px 15px;
-      font-size: 20px;
-      border-radius: 8px;
+    input {
+      font-size: 22px;
+      padding: 5px 5px;
+      border: 1px solid black;
+      border-radius: 5px;
+      line-height: 20px;
+    }
 
-      &:hover {
-        background-color: #4CAF50; 
-        color: white;
-      }
+    &:last-of-type{
+        margin: 0 0 20px 0;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    background-color: azure;
+    border: 1px solid rgb(43, 136, 199);
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #4CAF50; 
+      color: white;
     }
   }
 }
+

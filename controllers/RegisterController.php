@@ -2,30 +2,31 @@
 
 use app\db\Database;
 
-require_once __DIR__ .'/../db/Database.php';
-require_once __DIR__ .'/../db/config.php';
-function getBody()
-    {
-        foreach ($_POST as $key => $value) {
-            $data[$key] = filter_input(INPUT_POST, $key, FILTER_SANITIZE_SPECIAL_CHARS);
-        }
+require_once __DIR__ . '/../db/Database.php';
+require_once __DIR__ . '/../db/config.php';
 
-        return $data;
+function getBody()
+{
+    foreach ($_POST as $key => $value) {
+        $data[$key] = filter_input(INPUT_POST, $key, FILTER_SANITIZE_SPECIAL_CHARS);
     }
-if(isset($_POST['signup-btn'])) {
+
+    return $data;
+}
+
     $data = getBody();
     $errors = [];
     $input = new database();
     $email_used = $input->get_email($data['email']);
 
     if (!$data['firstname']) {
-        $errors['firstname'] = "required field";
+        $errors['firstname'] = "first name is required";
     }
     if (!$data['lastname']) {
-        $errors['lastname'] = "required field";
+        $errors['lastname'] = "last name is required";
     }
     if (!$data['email']) {
-        $errors['email'] = "required field";
+        $errors['email'] = "email is required";
     }
     if ($email_used) {
         $errors['email'] = "email already in use";
@@ -38,7 +39,14 @@ if(isset($_POST['signup-btn'])) {
 
     if (empty($errors)) {
         $input->register($data['firstname'], $data['lastname'], $data['email']);
-
-
+        echo "<p class='success'>";
+        echo "success!";
+        echo "</p>";
     }
-}
+    else {
+        foreach ($errors as $error){
+            echo "<p class='error'>";
+            echo $error;
+            echo "</p>";
+        }
+    }

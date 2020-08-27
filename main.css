@@ -31,7 +31,7 @@ body {
   width: 400px;
   float: left;
   background-color: rgba(255, 255, 255, 0.739);
-  padding: 20px 0;
+  padding: 20px 30px;
   border: 1px solid #222222;
   border-radius: 20px;
   text-align: center;
@@ -39,11 +39,19 @@ body {
           box-shadow: 0 0 59px -6px rgba(0, 0, 0, 0.66);
 }
 
-.container form {
-  padding: 15px 40px;
+.container p .success {
+  font-weight: bold;
+  font-size: 24px;
+  color: #23a723;
 }
 
-.container form .form-group {
+.container p .error {
+  font-weight: bold;
+  font-size: 24px;
+  color: #a72323;
+}
+
+.container .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,16 +63,11 @@ body {
   margin: 0 0 10px 0;
 }
 
-.container form .form-group label {
+.container .form-group label {
   font-size: 24px;
 }
 
-.container form .form-group .is-invalid {
-  border: 1px solid #a72323;
-  background-color: #ffdddd;
-}
-
-.container form .form-group input {
+.container .form-group input {
   font-size: 22px;
   padding: 5px 5px;
   border: 1px solid black;
@@ -72,11 +75,11 @@ body {
   line-height: 20px;
 }
 
-.container form .form-group:last-of-type {
+.container .form-group:last-of-type {
   margin: 0 0 20px 0;
 }
 
-.container form button {
+.container button {
   cursor: pointer;
   background-color: azure;
   border: 1px solid #2b88c7;
@@ -85,7 +88,7 @@ body {
   border-radius: 8px;
 }
 
-.container form button:hover {
+.container button:hover {
   background-color: #4CAF50;
   color: white;
 }
