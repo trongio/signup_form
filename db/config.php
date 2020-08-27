@@ -4,8 +4,9 @@ return [
     'username' => 'root',
     'password' => '',
     'database' => 'signup',
-    'mail_username' =>'user',
-    'mail_password' =>'pass',
-    'mail_host' => 'host',
-    'mail_port' => 587
+    'mail_username' =>'74410cc68c21f9',
+    'mail_password' =>'1c30912545e627',
+    'mail_host' => 'smtp.mailtrap.io',
+    'mail_port' => 2525,
+    'email' => 'test@developers-alliance.com'
 ];
